@@ -1,0 +1,40 @@
+% 16:9 aspect ratio so it will fill a TV screen
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage{hacksoc}
+
+% use pausefn command so you can generate slides with and without pauses
+\newcommand{\pausefn}{\pause}
+%\newcommand{\pausefn}{}
+
+\title{Sample Presentation}
+\subtitle{How to use this \LaTeX{ } template}
+\author{Peter Taylor}
+\date{\today}
+
+\begin{document}
+% Title slide
+\maketitleslide
+
+% Section Names have their own slides generated, make sure they are out of a frame
+% environment. If you want it numbered, include it in the name of the section
+\section{Part IV: Sample Section Title}
+\begin{frame}
+
+  \frametitle{Usage}
+  Say you wanted to have a footnote\footnote{like this}\footsep\footnote{or this\footnote{Unfortunately, nested footnotes don't work}}, you use \texttt{footnote}, and to separate them use \texttt{footsep}\par
+
+  \epigraph{If you want a nicely formatted quote like this one, use the \texttt{epigraph} environment. However, footnotes don't play nicely with this. Stylistically, I'd put all epigraphs at the end, but you don't have to}{And this is who said it, and when}
+
+  Pretty Much everything else is as expected.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Some Maths}
+  \framesubtitle{Have some lambda calculus}
+  The maths is set to use the maths that would be used in an article, as that is simply more readable than what beamer sets it to.
+  $$\int Y = \lambda f. (\lambda x. f (x x)) (\lambda x. f (x x))$$
+
+\end{frame}
+
+\end{document}
