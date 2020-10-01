@@ -1,3 +1,9 @@
-# Hacksoc Beamer Presentation Template
+# HTML Forms to REST, HTTP's Newton to Einstein
 
-A Template for making presentations for beamer. See `presentation.tex` for an example. Build as you normally would a latex file. Tested with `pdflatex`, but I'm sure xe/lualatex will work too.
+Delivery notes:
+
++ [Link to AUR form](https://aur.archlinux.org/packages/)
++ ```bash
+  curl --request GET \
+  --url 'https://aur.archlinux.org/rpc/?v=5&type=search&arg=chesspp'
+  ```
